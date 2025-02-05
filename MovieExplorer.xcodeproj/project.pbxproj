@@ -11,6 +11,8 @@
 		2D6A9D292D53670E00D59101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A9D282D53670E00D59101 /* ContentView.swift */; };
 		2D6A9D2B2D53670F00D59101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A9D2A2D53670F00D59101 /* Assets.xcassets */; };
 		2D6A9D2E2D53670F00D59101 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A9D2D2D53670F00D59101 /* Preview Assets.xcassets */; };
+		2D6A9D352D53699F00D59101 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A9D342D53699F00D59101 /* Model.swift */; };
+		2D6A9D372D537FD200D59101 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A9D362D537FD200D59101 /* MovieService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2D6A9D282D53670E00D59101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D6A9D2A2D53670F00D59101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D6A9D2D2D53670F00D59101 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D6A9D342D53699F00D59101 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2D6A9D362D537FD200D59101 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				2D6A9D282D53670E00D59101 /* ContentView.swift */,
 				2D6A9D2A2D53670F00D59101 /* Assets.xcassets */,
 				2D6A9D2C2D53670F00D59101 /* Preview Content */,
+				2D6A9D342D53699F00D59101 /* Model.swift */,
+				2D6A9D362D537FD200D59101 /* MovieService.swift */,
 			);
 			path = MovieExplorer;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6A9D352D53699F00D59101 /* Model.swift in Sources */,
 				2D6A9D292D53670E00D59101 /* ContentView.swift in Sources */,
+				2D6A9D372D537FD200D59101 /* MovieService.swift in Sources */,
 				2D6A9D272D53670E00D59101 /* MovieExplorerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

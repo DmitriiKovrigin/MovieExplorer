@@ -8,17 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var movies: [Movie] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(movies) { movie in
+                HStack {
+                    if let posterPath = movie.posterPath,  // Проверяем, что путь не nil
+                       let posterURL = URL(string: "https://image.tmdb.org/t/p/w200\(posterPath)") {
+                        AsyncImage(url: posterURL) { image in
+                            image.resizable()
+                                 .scaledToFill()
+                                 .frame(width: 50, height: 75)
+                                 .clipped()
+                        } placeholder: {
+                            ProgressView()
+                        }
+                    } else {
+                        // Если у фильма нет постера, показываем заглушку
+                        Image(systemName: "film")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 75)
+                            .foregroundColor(.gray)
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        Text(movie.title)
+                            .font(.headline)
+                        Text(movie.releaseDate ?? "Дата неизвестна")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
+            .onAppear {
+                MovieService().fetchMovies { fetchedMovies in
+                    DispatchQueue.main.async {
+                        self.movies = fetchedMovies ?? []
+                    }
+                }
+            }
+            .navigationTitle("Popular Movies")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
