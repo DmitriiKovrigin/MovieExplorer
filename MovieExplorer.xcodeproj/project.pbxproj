@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D4711792D538855005D5F51 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4711782D538855005D5F51 /* MovieDetailView.swift */; };
 		2D6A9D272D53670E00D59101 /* MovieExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A9D262D53670E00D59101 /* MovieExplorerApp.swift */; };
 		2D6A9D292D53670E00D59101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A9D282D53670E00D59101 /* ContentView.swift */; };
 		2D6A9D2B2D53670F00D59101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A9D2A2D53670F00D59101 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D4711782D538855005D5F51 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		2D6A9D232D53670E00D59101 /* MovieExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6A9D262D53670E00D59101 /* MovieExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieExplorerApp.swift; sourceTree = "<group>"; };
 		2D6A9D282D53670E00D59101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				2D6A9D2C2D53670F00D59101 /* Preview Content */,
 				2D6A9D342D53699F00D59101 /* Model.swift */,
 				2D6A9D362D537FD200D59101 /* MovieService.swift */,
+				2D4711782D538855005D5F51 /* MovieDetailView.swift */,
 			);
 			path = MovieExplorer;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4711792D538855005D5F51 /* MovieDetailView.swift in Sources */,
 				2D6A9D352D53699F00D59101 /* Model.swift in Sources */,
 				2D6A9D292D53670E00D59101 /* ContentView.swift in Sources */,
 				2D6A9D372D537FD200D59101 /* MovieService.swift in Sources */,
